@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Портфолио YaNesyTortiK</title>
+        <style>
+            body {
+                background-image: url('background.jpg');
+                background-repeat: no-repeat;
+                background-size: auto;
+                color: white;
+            }
+            .h1_container {
+                min-height: 12vh;
+                width: 90%;
+                position: fixed;
+                height: 12vh;
+                top: 0;
+                left: 5%;
+                border-radius: 150px;
+                backdrop-filter: blur(4px);
+                background-color: rgb(0,0,0,0.5);
+                display:table;
+                z-index: 10;
+            }
+            h1 {
+                font-family: "Times New Roman";
+                @media screen and (min-width: 768px) {
+                    font-size: 5vw;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 7vw;
+                }
+                @media screen and (min-width: 900px) {
+                    font-size: 5vw;
+                }
+                @media screen and (min-width: 1150px) {
+                    font-size: 3vw;
+                }
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                
+            }
+            .footer {
+                position: fixed;
+                bottom: 0;
+                top: 88vh;
+            }
+            .footer_h1 {
+                font-size: 3vw;
+            }
+            .h2_container {
+                width: 100%;
+                height: 5vh;
+                border-radius: 100px;
+                backdrop-filter: blur(4px);
+                background-color: rgb(0,0,0,0.5);
+                display:table;
+            }
+            h2 {
+                font-family: "Times New Roman";
+                font-size: 3vh;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+                margin-top: 2%;
+            }
+            .inline_elements {
+                display: inline;
+            }
+            .padding_12vh {
+                width: 100%;
+                height: 12vh;
+            }
+            
+            #projects {
+                @media screen and (max-width: 768px) {
+                    display: inline;
+                }
+                @media screen and (min-width: 768px) {
+                    display: table;
+                }
+            }
+            .popular_repo {
+                width: 80%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                padding-left: 10%;
+                
+                @media (min-width: 768px) {
+                    display: table-cell;
+                    width: 30%;
+                    padding-right: 1.5%;
+                    padding-left: 1.5%;
+                }
+                height: 25vh;
+                font-size: x-large;
+            }
+            .popular_repo_bg {
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+                backdrop-filter: blur(4px);
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,73,0,0.7399160347732843) 0%, rgba(2,103,0,0.48501407398897056) 100%);
+            }
+            .popular_repo_title {
+                text-align: center;
+            }
+            .popular_repo_desc {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .repo_info {
+                position: absolute;
+                bottom: 10%;
+                width: 80%;
+                left: 10%;
+            }
+            .stack_item {
+                font-size: x-large;
+            }
+            .stack_item_desc {
+                font-size: medium;
+                font-style: italic;
+            }
+            .side_to_side {
+                @media (min-width: 768px) {
+                    display: table;
+                }
+            }
+            .sts_el {
+                width: 80%;
+                margin-left: 10%;
+                height: fit-content;
+                padding-bottom: 5%;
+                margin-bottom: 5%;
+                margin-top: 5%;
+
+                @media (min-width: 768px) {
+                    display: table-cell;
+                    width: 30%;
+                    margin-left: 1.5%;
+                    margin-right: 1.5%;
+                }
+                border-radius: 20px;
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,73,3,0.7399160347732843) 0%, rgba(0,86,103,0.48501407398897056) 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="h1_container"><h1>Портфолио YaNesyTortiK</h1></div>
+        <div class="padding_12vh"></div>
+        <div class="h2_container"><h2>Популярные проекты</h2></div>
+        <div id="projects"></div>
+        <div class="padding_12vh"></div>
+        <div class="side_to_side">
+            <div class="stack sts_el">
+                <div class="h2_container"><h2>Рабочий стек</h2></div>
+                <ul>
+                    <li class="stack_item">Python</li>
+                    <li class="stack_item">Flask</li>
+                    <li class="stack_item">BeautifulSoup4</li>
+                </ul>
+            </div>
+            <div class="stack sts_el">
+                <div class="h2_container"><h2>Навыки/умения</h2></div>
+                <ul>
+                    <li class="stack_item">Python <div class="stack_item_desc">(работа с ООП, декораторы, асинхронный код, написание библиотек)</div></li>
+                    <li class="stack_item">JavaScript <div class="stack_item_desc">(базовые браузерные функции, перехват событий кастомными функциями, модификация сайтов)</div></li>
+                    <li class="stack_item">SQL <div class="stack_item_desc">(Postgress, SQLite, SQLAlchemy)</div></li>
+                    <li class="stack_item">Bash + Batch <div class="stack_item_desc">(Простенькие скрипты)</div></li>
+                    <li class="stack_item">Linux администрирование <div class="stack_item_desc">(Ubuntu, AltLinux)</div></li>
+                </ul>
+            </div>
+            <div class="stack sts_el">
+                <div class="h2_container"><h2>Направления развития</h2></div>
+                <ul>
+                    <li class="stack_item">Парсинг</li>
+                    <li class="stack_item">Скраппинг</li>
+                    <li class="stack_item">Бэк и фуллстэк разработка</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="padding_12vh"></div>
+        <div class="h1_container footer">
+            <h1 class="footer_h1">
+                email: <a href="mailto:ya.nesy.tortik.email@gmail.com">ya.nesy.tortik.email@gmail.com</a><br>
+                telegram: <a href="https://t.me/nesy_tortik">@nesy_tortik</a> | 
+                github: <a href="https://github.com/YaNesyTortiK">YaNesyTortiK</a>
+            </h1>
+        </div>
+        <script>
+            let my_info = {};
+            fetch('https://api.github.com/users/YaNesyTortiK') // fetching user data
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    // console.log(data)
+                    my_info['profile_picture'] = data['avatar_url']
+                    my_info['public_repos'] = data['public_repos']
+                    my_info['email'] = data['email']
+                    my_info['created_at'] = data['created_at']
+                    my_info['html_url'] = data['html_url']
+                    my_info['repos_url'] = data['repos_url']
+                })  
+                .catch(function(err) {
+                    console.log('Fetch Error :-S', err);
+                });
+            my_info['popular_repositories'] = []
+            fetch('https://api.github.com/users/YaNesyTortiK/repos') // fetching user data
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    // сортируем по звездочкам
+                    var items = Object.keys(data).map(function(key) {
+                    return [key, data[key]['stargazers_count']];
+                    });
+                    items.sort(function(first, second) {
+                    return second[1] - first[1];
+                    });
+                    for (const element of items.slice(0, 3)) {
+                        my_info['popular_repositories'].push(data[element[0]])
+                    }
+                    update_repos();
+                })  
+                .catch(function(err) {
+                    console.log('Fetch Error :-S', err);
+                });
+            // =======================
+
+            function update_repos() {
+                const projects_div = document.getElementById('projects')
+                my_info['popular_repositories'].forEach(repo => {
+                    projects_div.innerHTML = projects_div.innerHTML + 
+                    `
+                    <div class='popular_repo'>
+                        <div class='popular_repo_bg'>
+                            <h3 class='popular_repo_title'><a href="${repo['html_url']}">${repo['name']}</a></h3>
+                            <p class='popular_repo_desc'>Описание: ${repo['description'] ? repo['description'] : '-'}</p>
+                            <div class='inline_elements repo_info'>
+                                <span class='stargazers_count repo_info_element'>${repo['stargazers_count']}⭐</span>
+                                <span class='repo_language repo_info_element'>${repo['language']}</span>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                });
+            }
+        </script>
+    </body>
+</html>
+
