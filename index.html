@@ -43,6 +43,10 @@
                 position: fixed;
                 bottom: 0;
                 top: 88vh;
+                @media (pointer:none), (pointer:coarse) {
+                    top: 86vh;
+                    bottom: 2vh;
+                }
             }
             .footer_h1 {
                 font-size: 2vw;
@@ -52,6 +56,7 @@
                 @media screen and (max-width: 600px) {
                     font-size: 4vw;
                 }
+                
             }
             .h2_container {
                 width: 100%;
